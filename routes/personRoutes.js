@@ -5,7 +5,7 @@ const person = require('./../Models/Person');  // path name of the person
 
 
 
-    router.post('/', async (req, res) => {
+    router.post('/person', async (req, res) => {
     try {
       const data = req.body // Assuming the request body contains the person data
       const newPerson = new person(data); // Create a new Person document with using the mongoose model
